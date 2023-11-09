@@ -25,6 +25,7 @@ class PDFMover:
         for file in self.check_target():
             shutil.move(f"{self.source}\\{file}", f"{self.target}\\{file}")
 
-
+# Specify source path, from which .pdf files will be taken, 
+# and target path where files will land 
 pdf_mover = PDFMover('<source_path>', '<target_path>')
 pdf_mover.move_files()
